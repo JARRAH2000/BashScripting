@@ -1,2 +1,2 @@
 # BashScripting
-Learn Linux TV
+Training on Learn Linux TV Bash Scripting course

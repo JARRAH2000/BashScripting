@@ -1,0 +1,8 @@
+#!/bin/bash
+
+if [ -f  ~/Desktop/BashScripting/sh ]
+then
+    echo "file exists"
+else
+    echo "files does not exist"
+fi

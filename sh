@@ -1,7 +1,12 @@
 #!/bin/bash
 
-myname="Basheer"
-now=$(date)
+x=1
 
-echo "Hello $USER"
-echo My current working directory is : $now
+while [ $x -le 10 ]
+do
+echo "As of $(date), X is equal to $x"
+x=$(( $x + 1 ))
+
+sleep 10
+
+done

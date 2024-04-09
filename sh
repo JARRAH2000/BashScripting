@@ -1,12 +1,17 @@
 #!/bin/bash
 
-x=1
+release_file=/etc/os-release
 
-while [ $x -le 10 ]
-do
-echo "As of $(date), X is equal to $x"
-x=$(( $x + 1 ))
+if grep -q "Arch" $release_file
+then 
+	# The host is based
+	sudo pacman -Syu
+fi
 
-sleep 10
-
-done
+if grep -q "Ubuntu" $release_file
+then 
+	# The host is based
+	# Run the apt version
+	sudo apt update
+	sudo apt dist-upgrade
+fi
